@@ -1,0 +1,55 @@
+/*
+Theme Name: CHANGEME.fi Teema
+Author: Fimes
+Author URI: https://fimes.fi
+Description: CHANGEME.
+Version: 1.0
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+ul {
+
+}
+
+li {
+
+}
+
+a {
+    
+}
+
+/* Primary btn */
+.wp-block-button__link.wp-element-button {
+    
+}
+
+/* Secondary btn */
+.wp-block-button__link.wp-element-button.is-style-outline {
+
+}
