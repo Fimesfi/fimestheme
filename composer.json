@@ -1,18 +1,36 @@
 {
-  "name": "fimesfi/fimestheme",
-  "type": "wordpress-theme",
-  "description": "",
-  "homepage": "https://github.com/fimesfi/fimestheme",
-  "keywords": [
-    "wordpress"
-  ],
-  "license": "MIT",
-  "version": "1.0",
-  "authors": [
-    {
-      "name": "Eeli Gren",
-      "email": "eeli.gren@fimes.fi",
-      "homepage": "https://github.com/eeligren"
+    "name": "fimesfi/fimestheme",
+    "type": "wordpress-theme",
+    "description": "Starter theme for Fimes WordPress web development. Based on automatics/_s Underscores work, this is just our modified version of that.",
+    "keywords": [
+        "WordPress",
+        "Themes"
+    ],
+    "homepage": "https://github.com/fimesfi/fimestheme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Original",
+            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
+        },
+        {
+            "name": "Eeli Gren",
+            "homepage": "https://github.com/eeligren",
+            "email": "eeli.gren@fimes.fi"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "wptrt/wpthemereview": "^0.2.1",
+        "php-parallel-lint/php-parallel-lint": "^1.2.0",
+        "wp-cli/i18n-command": "^2.2.5"
+    },
+    "scripts": {
+        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "make-pot": "wp i18n make-pot . languages/_s.pot"
     }
-  ]
 }
