@@ -1,7 +1,7 @@
 {
   "name": "fimestheme",
   "version": "1.0.0",
-  "description": "Fimestheme ===",
+  "description": "Fimestheme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,9 +28,7 @@
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
-    "gulp-ruby-sass": "^4.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.66.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",

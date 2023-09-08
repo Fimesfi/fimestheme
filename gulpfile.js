@@ -42,10 +42,10 @@ gulp.task('js', function() {
 
 // Images
 gulp.task('images', function() {
-  return gulp.src('./images/src/*')
+  return gulp.src('./assets/images/src/*')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(imagemin({ optimizationLevel: 7, progressive: true }))
-    .pipe(gulp.dest('./images/dist'));
+    .pipe(gulp.dest('./assets/images/dist'));
 });
 
 // Watch
