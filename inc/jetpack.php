@@ -33,7 +33,7 @@ function fimestheme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => '_s-style',
+				'stylesheet' => 'fimestheme-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
