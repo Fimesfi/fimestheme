@@ -26,7 +26,8 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./'))
     .pipe(rtlcss()) // Convert to RTL
     .pipe(rename({ basename: 'rtl' })) // Rename to rtl.css
-    .pipe(gulp.dest('./')); // Output RTL stylesheets (rtl.css)
+    .pipe(gulp.dest('./')) // Output RTL stylesheets (rtl.css)
+    .pipe(browserSync.stream()); // Päivitä selain automaattisesti SCSS-muutosten jälkeen
 });
 
 // JavaScript
@@ -37,21 +38,23 @@ gulp.task('js', function() {
     .pipe(concat('app.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./js'))
+    .pipe(browserSync.stream()); // Päivitä selain automaattisesti JS-muutosten jälkeen
 });
 
 // Images
 gulp.task('images', function() {
-  return gulp.src('./assets/images/src/*')
+  return gulp.src('./images/src/*')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(imagemin({ optimizationLevel: 7, progressive: true }))
-    .pipe(gulp.dest('./assets/images/dist'));
+    .pipe(gulp.dest('./images/dist'))
+    .pipe(browserSync.stream()); // Päivitä selain automaattisesti JS-muutosten jälkeen
 });
 
 // Watch
 gulp.task('watch', function() {
   browserSync.init({
-    files: ['./**/*.php'],
+    files: ['./**/*.php', './sass/**/*.scss'],
     proxy: 'http://projekti.local/',
   });
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
