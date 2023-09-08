@@ -1,0 +1,26 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    padding: 2rem var(--margin-side);
+
+    .site-branding {
+        .custom-logo {
+            max-width: 150px;
+        }
+    }
+
+    nav.main-navigation {
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu .nav-menu {
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            list-style: none;
+        }
+    }
+}

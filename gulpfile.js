@@ -55,7 +55,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php', './sass/**/*.scss'],
-    proxy: 'http://projekti.local/',
+    proxy: 'http://fimestheme.local/',
   });
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
   gulp.watch(['./js/*.js', '!./js/app.min.js'], gulp.series('js'));
