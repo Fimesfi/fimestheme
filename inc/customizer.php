@@ -1,8 +1,8 @@
 <?php
 /**
- * _s Theme Customizer
+ * Fimestheme Theme Customizer
  *
- * @package _s
+ * @package Fimestheme
  */
 
 /**

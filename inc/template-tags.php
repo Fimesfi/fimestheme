@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package _s
+ * @package Fimestheme
  */
 
 if ( ! function_exists( 'fimestheme_posted_on' ) ) :

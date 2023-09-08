@@ -1,10 +1,10 @@
 <?php
 /**
- * _s functions and definitions
+ * Fimestheme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package _s
+ * @package Fimestheme
  */
 
 if ( ! defined( 'fimestheme_VERSION' ) ) {
@@ -23,7 +23,7 @@ function fimestheme_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on _s, use a find and replace
+		* If you're building a theme based on Fimestheme, use a find and replace
 		* to change 'fimestheme' to the name of your theme in all the template files.
 		*/
 	load_theme_textdomain( 'fimestheme', get_template_directory() . '/languages' );

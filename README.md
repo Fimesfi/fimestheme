@@ -1,7 +1,7 @@
 Fimestheme
 ===
 
-Custom modification for Fimes web development. Original work by Automattic / _s or Underscores.
+Custom modification for Fimes web development. Original work by Automattic / Fimestheme or Underscores.
 
 Hi. I'm a starter theme called Fimestheme, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
