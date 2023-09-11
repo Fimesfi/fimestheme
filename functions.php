@@ -70,18 +70,6 @@ function fimestheme_setup() {
 		)
 	);
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support(
-		'custom-background',
-		apply_filters(
-			'fimestheme_custom_background_args',
-			array(
-				'default-color' => 'ffffff',
-				'default-image' => '',
-			)
-		)
-	);
-
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -93,8 +81,6 @@ function fimestheme_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
@@ -141,6 +127,8 @@ function fimestheme_scripts() {
 	wp_enqueue_style( 'fimestheme-style', get_stylesheet_uri(), array(), fimestheme_VERSION );
 	wp_style_add_data( 'fimestheme-style', 'rtl', 'replace' );
 
+	//enque jquery script from web cdn
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), fimestheme_VERSION, true );
 	wp_enqueue_script( 'fimestheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), fimestheme_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -170,11 +158,9 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Load Jetpack compatibility file.
+ * Advanced custom fields blocks
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+require get_template_directory() . '/inc/acf-blocks.php';
 
 /**
  * Load WooCommerce compatibility file.

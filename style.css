@@ -19,6 +19,16 @@ Text Domain: fimestheme
   --color-link-text-hover: var(--color-darker-black);
 }
 
+@media only screen and (max-width: 770px) {
+  :root {
+    --margin-side: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --margin-side: 1.2rem;
+  }
+}
 :root {
   --margin-side: 5rem;
 }
@@ -29,6 +39,16 @@ Text Domain: fimestheme
   font-style: normal;
   font-display: swap;
   src: url("../../assets/fonts/Inter-variable.woff2") format("woff2"), url("../../assets/fonts/Inter-variable.woff") format("woff");
+}
+@media only screen and (max-width: 770px) {
+  :root {
+    --margin-side: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --margin-side: 1.2rem;
+  }
 }
 :root {
   --font-size-h1: 50px;
@@ -650,28 +670,86 @@ body .site {
   min-height: 100vh;
 }
 
+/* Page content wrapper */
 .site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: var(--color-black);
+  padding: 2rem var(--margin-side);
+}
+.site-header .top {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background-color: var(--color-black);
-  padding: 2rem var(--margin-side);
 }
 .site-header .site-branding .custom-logo {
-  max-width: 150px;
+  max-width: 120px;
 }
 .site-header nav.main-navigation .menu-toggle {
   display: none;
 }
-.site-header nav.main-navigation .menu .nav-menu {
+.site-header nav.main-navigation .nav-menu ul {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
   margin: 0;
   list-style: none;
+}
+.site-header nav.main-navigation .menu-toggle {
+  border: none;
+  color: var(--color-white-smoke);
+}
+@media only screen and (max-width: 770px) {
+  .site-header nav.main-navigation .menu-toggle {
+    display: block;
+  }
+  .site-header nav.main-navigation .nav-menu {
+    display: none;
+  }
+}
+.site-header .menu ul li.page_item a, .site-header .nav-menu ul li.page_item a {
+  text-decoration: none;
+  color: var(--color-white-smoke);
+}
+.site-header .menu ul li.page_item a:hover, .site-header .nav-menu ul li.page_item a:hover {
+  color: var(--color-grey);
+}
+.site-header .menu ul li.page_item.current_page_item a, .site-header .nav-menu ul li.page_item.current_page_item a {
+  text-decoration: underline;
+}
+.site-header .mobile-navigation {
+  padding: 2rem var(--margin-side);
+  display: none;
+}
+.site-header .mobile-navigation .menu ul {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 2rem;
+}
+
+section.hero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 200px;
 }
 
 .site-footer {

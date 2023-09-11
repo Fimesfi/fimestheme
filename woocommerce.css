@@ -15,6 +15,16 @@ WooCommerce styles override
   --color-link-text-hover: var(--color-darker-black);
 }
 
+@media only screen and (max-width: 770px) {
+  :root {
+    --margin-side: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --margin-side: 1.2rem;
+  }
+}
 :root {
   --font-size-h1: 50px;
   --font-size-h2: 50px;
@@ -42,6 +52,16 @@ WooCommerce styles override
   }
 }
 
+@media only screen and (max-width: 770px) {
+  :root {
+    --margin-side: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --margin-side: 1.2rem;
+  }
+}
 /**
  * Shop tables
 

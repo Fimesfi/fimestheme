@@ -3,6 +3,13 @@ Fimestheme
 
 Custom modification for Fimes web development. Original work by Automattic / Fimestheme or Underscores.
 
+## Things:
+- Cleaned and ready for development
+- Uses ACF fields
+- Custom logo in header
+- Editable colors
+- Very editable trough Wordpress
+
 Hi. I'm a starter theme called Fimestheme, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
