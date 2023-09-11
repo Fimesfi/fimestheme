@@ -1,0 +1,13 @@
+{
+    "name": "hero-block",
+    "title": "Hero",
+    "description": "A custom testimonial block that uses ACF fields.",
+    "category": "fimes-blocks",
+    "icon": "admin-comments",
+    "keywords": ["hero", "header"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {}
+}

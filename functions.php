@@ -106,6 +106,7 @@ add_action( 'after_setup_theme', 'fimestheme_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function fimestheme_widgets_init() {
+	/*
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'fimestheme' ),
@@ -117,6 +118,7 @@ function fimestheme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	*/
 }
 add_action( 'widgets_init', 'fimestheme_widgets_init' );
 

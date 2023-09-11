@@ -1,0 +1,26 @@
+.wp-block { max-width: 1300px; }
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] { max-width: 1080px; }
+/* Width of "full-width" blocks */
+.wp-block[data-align="full"] { max-width: none; }
+
+@import "variables/colors";
+@import "variables/responsive";
+@import "variables/other";
+@import "variables/font-face";
+@import "variables/font-size";
+@import "variables/font-family";
+
+/* Base */
+@import "base/typography";
+
+@import "base/elements/body";
+@import "base/elements/buttons";
+@import "base/elements/fields";
+@import "base/elements/hr";
+@import "base/elements/links";
+@import "base/elements/lists";
+@import "base/elements/media";
+@import "base/elements/tables";
+
+@import "layout/blocks/hero-block";

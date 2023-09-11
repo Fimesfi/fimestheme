@@ -758,6 +758,21 @@ section.hero {
   padding: 2rem var(--margin-side);
   text-align: center;
 }
+section.main-hero {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 400px;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: var(--color-white);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: var(--margin-side) 2rem;
+}
+section.main-hero .image img {
+  width: 200px;
+}
+
 /* Plugins */
 /* Utilities */
 /* Text meant only for screen readers. */

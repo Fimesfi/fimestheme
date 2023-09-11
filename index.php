@@ -14,7 +14,9 @@
 
  get_header();
  ?>
+ 
 	 <main id="primary" class="site-main">
+		 
 		 <?php
 		 //Page elements
 		 while ( have_posts() ) :
@@ -33,9 +35,9 @@
  
 	 </main>
  
-<?php
+ <?php
  
-//Wanna sidebar?
-//get_sidebar();
-get_footer();
+ //Wanna sidebar?
+ //get_sidebar();
+ get_footer();
  

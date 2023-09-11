@@ -1,0 +1,14 @@
+section.main-hero {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    background-color: var(--color-white);
+    justify-content: space-around;
+    padding: var(--margin-side) 2rem;
+
+    .image {
+        img {
+            width: 200px;
+        }
+    }
+}
