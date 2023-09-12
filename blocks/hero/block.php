@@ -6,6 +6,6 @@
         <p><?php the_field('subtitle'); ?></p>
     </div>
     <div class="image">
-        <img src="<?php the_field('image'); ?>" />
+        <img alt="Hero image" src="<?php the_field('image'); ?>" />
     </div>
 </section>
