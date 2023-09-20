@@ -23,10 +23,7 @@ gulp.task('sass', function() {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./'))
-    .pipe(rtlcss()) // Convert to RTL
-    .pipe(rename({ basename: 'rtl' })) // Rename to rtl.css
-    .pipe(gulp.dest('./')) // Output RTL stylesheets (rtl.css)
+    .pipe(gulp.dest('./css/'))
     .pipe(browserSync.stream()); // Päivitä selain automaattisesti SCSS-muutosten jälkeen
 });
 
