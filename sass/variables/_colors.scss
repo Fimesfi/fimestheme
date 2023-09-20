@@ -1,18 +1,17 @@
 // CSS colors
 // https://www.color-blindness.com/color-name-hue/
-
 :root {
-    --color-black: #171C1A;
-    --color-white-smoke: #F6F6F6;
-    --color-darker-black: #0F0F0F;
-    --color-grey: #838383;
-    --color-white: #ffffff;
+	--color-black: #171c1a;
+	--color-white-smoke: #f6f6f6;
+	--color-darker-black: #0f0f0f;
+	--color-grey: #838383;
+	--color-white: #fff;
 
-    --color-bg: var(--color-white-smoke);
-    --color-paragraph: var(--color-black);
+	--color-bg: var(--color-white-smoke);
+	--color-paragraph: var(--color-black);
 
-    --color-link-text: var(--color-black);
-    --color-link-text-hover: var(--color-darker-black);
+	--color-link-text: var(--color-black);
+	--color-link-text-hover: var(--color-darker-black);
 }
 
 $color__background-body: var(--color-bg);

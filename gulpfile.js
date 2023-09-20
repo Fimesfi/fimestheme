@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 const gutil = require('gulp-util');

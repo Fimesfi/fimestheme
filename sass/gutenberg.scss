@@ -1,8 +1,16 @@
-.wp-block { max-width: 1300px; }
+.wp-block {
+	max-width: 1300px;
+}
+
 /* Width of "wide" blocks */
-.wp-block[data-align="wide"] { max-width: 1080px; }
+.wp-block[data-align="wide"] {
+	max-width: 1080px;
+}
+
 /* Width of "full-width" blocks */
-.wp-block[data-align="full"] { max-width: none; }
+.wp-block[data-align="full"] {
+	max-width: none;
+}
 
 @import "variables/colors";
 @import "variables/responsive";
@@ -12,7 +20,6 @@
 
 /* Base */
 @import "base/typography";
-
 @import "base/elements/body";
 @import "base/elements/buttons";
 @import "base/elements/fields";
@@ -21,5 +28,4 @@
 @import "base/elements/lists";
 @import "base/elements/media";
 @import "base/elements/tables";
-
 @import "layout/blocks/hero-block";

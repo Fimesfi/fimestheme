@@ -5,13 +5,15 @@ $breakpoint-mobile: 600px;
 $width-full: 100%;
 
 @media only screen and (max-width: $breakpoint-tablet) {
-    :root {
-        --margin-side: 3rem;
-    }
+
+	:root {
+		--margin-side: 3rem;
+	}
 }
 
 @media only screen and (max-width: $breakpoint-mobile) {
-    :root {
-        --margin-side: 1.2rem;
-    }
+
+	:root {
+		--margin-side: 1.2rem;
+	}
 }
