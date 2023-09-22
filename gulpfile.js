@@ -51,7 +51,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php', './sass/**/*.scss'],
-    proxy: 'http://fimestheme.local/',
+    proxy: 'http://fimesthemev2.local/',
   });
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
   gulp.watch(['./js/*.js', '!./js/app.min.js'], gulp.series('js'));

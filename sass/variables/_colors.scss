@@ -1,36 +1,16 @@
-// CSS colors
+// Theme colors
 // https://www.color-blindness.com/color-name-hue/
+
 :root {
-	--color-black: #171c1a;
-	--color-white-smoke: #f6f6f6;
-	--color-darker-black: #0f0f0f;
-	--color-grey: #838383;
-	--color-white: #fff;
+	--color-blue-lagoon: #005B68; //Primary
+	--color-sherpa-blue: #003F48; //Primary Dark
+	--color-columbia-blue: #A3F6FF; //Secondary
+	--color-iris-blue: #09B7CE; //Accent
+	--color-azure: #E9FBFF; //Background color
+	--color-dark-green: #011A1D; //Text
+	--color-lavender: #E2F4F8; //Grey
 
-	--color-bg: var(--color-white-smoke);
-	--color-paragraph: var(--color-black);
-
-	--color-link-text: var(--color-black);
-	--color-link-text-hover: var(--color-darker-black);
+	--color-bg: var(--color-azure);
+	--color-paragraph: var(--color-main);
+	--color-main: var(--color-dark-green);
 }
-
-$color__background-body: var(--color-bg);
-$color__background-screen: var(--color-bg);
-$color__background-hr: var(--color-paragraph);
-$color__background-button: var(--color-black);
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: #4169e1;
-$color__link-visited: #800080;
-$color__link-hover: #191970;
-$color__text-main: #404040;
-
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;

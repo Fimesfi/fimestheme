@@ -13,7 +13,6 @@ if ( ! defined( 'THEME_VERSION' ) ) {
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function fimestheme_setup() {
-
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -26,9 +25,10 @@ function fimestheme_setup() {
 	//This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'fimestheme' ),
+			'main-navigation' => esc_html__( 'Päävalikko', 'fimestheme' ),
 		)
 	);
+	
 
 	/*
 		* Switch default core markup for search form, comment form, and comments

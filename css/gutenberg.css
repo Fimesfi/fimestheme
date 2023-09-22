@@ -13,15 +13,16 @@
 }
 
 :root {
-  --color-black: #171C1A;
-  --color-white-smoke: #F6F6F6;
-  --color-darker-black: #0F0F0F;
-  --color-grey: #838383;
-  --color-white: #ffffff;
-  --color-bg: var(--color-white-smoke);
-  --color-paragraph: var(--color-black);
-  --color-link-text: var(--color-black);
-  --color-link-text-hover: var(--color-darker-black);
+  --color-blue-lagoon: #005B68;
+  --color-sherpa-blue: #003F48;
+  --color-columbia-blue: #A3F6FF;
+  --color-iris-blue: #09B7CE;
+  --color-azure: #E9FBFF;
+  --color-dark-green: #011A1D;
+  --color-lavender: #E2F4F8;
+  --color-bg: var(--color-azure);
+  --color-paragraph: var(--color-main);
+  --color-main: var(--color-dark-green);
 }
 
 @media only screen and (max-width: 770px) {
@@ -39,7 +40,7 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: Inter;
   font-display: swap;
   src: url("assets/fonts/Inter-variable.woff2") format("woff2"), url("assets/fonts/Inter-variable.woff") format("woff");
 }
@@ -97,7 +98,7 @@ select,
 optgroup,
 textarea {
   color: var(--color-paragraph);
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: var(--font-size-paragraph);
 }
 
@@ -110,9 +111,9 @@ input[type=button],
 input[type=reset],
 input[type=submit] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: var(--color-bg);
   border-radius: 3px;
-  background: var(--color-black);
+  background: var(--color-bg);
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -121,7 +122,7 @@ button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: var(--color-bg);
 }
 button:active, button:focus,
 input[type=button]:active,
@@ -130,7 +131,7 @@ input[type=reset]:active,
 input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: var(--color-bg);
 }
 
 input[type=text],
@@ -149,8 +150,8 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
   border-radius: 3px;
   padding: 3px;
 }
@@ -170,11 +171,11 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus {
-  color: #111;
+  color: var(--color-bg);
 }
 
 select {
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-bg);
 }
 
 textarea {
@@ -182,20 +183,20 @@ textarea {
 }
 
 hr {
-  background-color: var(--color-paragraph);
+  background-color: var(--color-bg);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
 }
 
 a {
-  color: #4169e1;
+  color: var(--color-paragraph);
 }
 a:visited {
-  color: #800080;
+  color: var(--color-paragraph);
 }
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: var(--color-paragraph);
 }
 a:focus {
   outline: thin dotted;
