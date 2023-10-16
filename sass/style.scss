@@ -1,7 +1,6 @@
 /* Varibles */
 @import "variables/colors";
 @import "variables/responsive";
-@import "variables/other";
 @import "variables/font-face";
 @import "variables/font-size";
 
@@ -28,7 +27,7 @@
 
 /* Layout */
 @import "layout/site-header";
-@import "layout/site-hero";
+@import "layout/site-main";
 @import "layout/site-footer";
 @import "layout/blocks/hero-block";
 

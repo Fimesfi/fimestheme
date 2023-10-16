@@ -13,4 +13,11 @@
 	--color-bg: var(--color-azure);
 	--color-paragraph: var(--color-main);
 	--color-main: var(--color-dark-green);
+
+	--color-primary: var(--color-blue-lagoon);
+}
+
+@mixin focus-outline() {
+	outline: solid dotted;
+	outline-color: var(--color-primary);
 }

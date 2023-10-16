@@ -1,21 +1,58 @@
+.button, 
 button,
-input[type="button"],
+input[type="submit"],
 input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: var(--color-bg);
-	border-radius: 3px;
-	background: var(--color-bg);
-	color: rgba(0, 0, 0, 0.8);
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+input[type="submit"],
+.wp-block-button .wp-block-button__link, 
+.wp-block-button.is-style-outline .wp-block-button__link {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+	border: 2px solid var(--color-primary);
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    font-size: var(--font-size-paragraph);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    word-break: break-word;
+	transition: .1s background-color ease-in-out, .1s border-color ease-in-out, .1s color ease-in-out;
 
 	&:hover {
-		border-color: var(--color-bg);
+		background-color: var(--color-sherpa-blue);
+		border-color: var(--color-sherpa-blue);
 	}
 
 	&:active,
 	&:focus {
-		border-color: var(--color-bg);
+		display: none;
+	}
+
+	&:visited {
+		color: var(--color-bg);
+	}
+
+    svg {
+        width: 25px;
+    }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	color: var(--color-primary);
+
+	&:hover {
+		color: var(--color-bg);
+		border-color: var(--color-primary);
+		background-color: var(--color-primary);
 	}
 }
