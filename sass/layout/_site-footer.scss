@@ -1,10 +1,14 @@
 .site-footer {
-    width: 100%;
-    background-color: var(--color-darker-black);
-    padding: 2rem var(--margin-side);
-    text-align: center;
+	width: 100%;
+	background-color: var(--color-main);
+	color: var(--color-bg);
+	padding: 2rem var(--content-horizontal-margin);
+	text-align: center;
+	line-height: 2rem;
 
-    .site-info {
-        
-    }
+	.site-info {
+		a {
+			color: var(--color-bg);
+		}
+	}
 }

@@ -1,0 +1,484 @@
+.wp-block {
+  max-width: 1300px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align=wide] {
+  max-width: 1080px;
+}
+
+/* Width of "full-width" blocks */
+.wp-block[data-align=full] {
+  max-width: none;
+}
+
+:root {
+  --color-blue-lagoon: #005B68;
+  --color-sherpa-blue: #003F48;
+  --color-columbia-blue: #A3F6FF;
+  --color-iris-blue: #09B7CE;
+  --color-azure: #E9FBFF;
+  --color-dark-green: #011A1D;
+  --color-lavender: #E2F4F8;
+  --color-bg: var(--color-azure);
+  --color-paragraph: var(--color-main);
+  --color-main: var(--color-dark-green);
+  --color-primary: var(--color-blue-lagoon);
+}
+
+:root {
+  --header-horizontal-margin: 5rem;
+  --content-horizontal-margin: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --header-horizontal-margin: 3rem;
+    --content-horizontal-margin: 5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --header-horizontal-margin: 1rem;
+    --content-horizontal-margin: 1rem;
+  }
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Thin.woff2") format("woff2"), url("../assets/fonts/Inter-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-ThinItalic.woff2") format("woff2"), url("../assets/fonts/Inter-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-ExtraLight.woff2") format("woff2"), url("../assets/fonts/Inter-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-ExtraLightItalic.woff2") format("woff2"), url("../assets/fonts/Inter-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Light.woff2") format("woff2"), url("../assets/fonts/Inter-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-LightItalic.woff2") format("woff2"), url("../assets/fonts/Inter-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"), url("../assets/fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Italic.woff2") format("woff2"), url("../assets/fonts/Inter-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Medium.woff2") format("woff2"), url("../assets/fonts/Inter-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Inter-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-SemiBold.woff2") format("woff2"), url("../assets/fonts/Inter-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-SemiBoldItalic.woff2") format("woff2"), url("../assets/fonts/Inter-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Bold.woff2") format("woff2"), url("../assets/fonts/Inter-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-BoldItalic.woff2") format("woff2"), url("../assets/fonts/Inter-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-ExtraBold.woff2") format("woff2"), url("../assets/fonts/Inter-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"), url("../assets/fonts/Inter-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-Black.woff2") format("woff2"), url("../assets/fonts/Inter-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../assets/fonts/Inter-BlackItalic.woff2") format("woff2"), url("../assets/fonts/Inter-BlackItalic.woff") format("woff");
+}
+:root {
+  --header-horizontal-margin: 5rem;
+  --content-horizontal-margin: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --header-horizontal-margin: 3rem;
+    --content-horizontal-margin: 5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --header-horizontal-margin: 1rem;
+    --content-horizontal-margin: 1rem;
+  }
+}
+:root {
+  --font-size-h1: 50px;
+  --font-size-h2: 50px;
+  --font-size-h3: 50px;
+  --font-size-h4: 50px;
+  --font-size-h5: 50px;
+  --font-size-h6: 50px;
+  --font-size-paragraph: 18px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-paragraph: var(--font-weight-regular);
+  --font-weight-heading: var(--font-weight-bold);
+}
+@media (max-width: 600px) {
+  :root {
+    --font-size-h1: 50px;
+    --font-size-h2: 50px;
+    --font-size-h3: 50px;
+    --font-size-h4: 50px;
+    --font-size-h5: 50px;
+    --font-size-h6: 50px;
+    --font-size-paragraph: 18px;
+  }
+}
+
+/* Base */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: var(--color-paragraph);
+  font-family: "Inter", sans-serif;
+  font-size: var(--font-size-paragraph);
+}
+
+p {
+  line-height: 1.4em;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=submit],
+.wp-block-button .wp-block-button__link,
+.wp-block-button.is-style-outline .wp-block-button__link {
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: none;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: var(--font-size-paragraph);
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  word-break: break-word;
+  transition: 0.1s background-color ease-in-out, 0.1s border-color ease-in-out, 0.1s color ease-in-out;
+}
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: var(--color-sherpa-blue);
+  border-color: var(--color-sherpa-blue);
+}
+.button:active, .button:focus,
+button:active,
+button:focus,
+input[type=submit]:active,
+input[type=submit]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus,
+.wp-block-button .wp-block-button__link:active,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:active,
+.wp-block-button.is-style-outline .wp-block-button__link:focus {
+  display: none;
+}
+.button:visited,
+button:visited,
+input[type=submit]:visited,
+input[type=reset]:visited,
+input[type=submit]:visited,
+.wp-block-button .wp-block-button__link:visited,
+.wp-block-button.is-style-outline .wp-block-button__link:visited {
+  color: var(--color-bg);
+}
+.button svg,
+button svg,
+input[type=submit] svg,
+input[type=reset] svg,
+input[type=submit] svg,
+.wp-block-button .wp-block-button__link svg,
+.wp-block-button.is-style-outline .wp-block-button__link svg {
+  width: 25px;
+}
+.button .button-container,
+button .button-container,
+input[type=submit] .button-container,
+input[type=reset] .button-container,
+input[type=submit] .button-container,
+.wp-block-button .wp-block-button__link .button-container,
+.wp-block-button.is-style-outline .wp-block-button__link .button-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 1rem;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+  border-radius: 3px;
+  padding: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+textarea:focus {
+  color: var(--color-bg);
+}
+
+select {
+  border: 1px solid var(--color-bg);
+}
+
+textarea {
+  width: 100%;
+}
+
+hr {
+  background-color: var(--color-bg);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: var(--color-paragraph);
+  text-decoration: none;
+  position: relative;
+}
+.site-main a:not(.button, .no-hover, .wp-block-button__link):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  right: 0;
+  z-index: 2;
+  height: 2px;
+  opacity: 0.5;
+  transition: width 0.2s ease-in-out;
+  background-color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-primary);
+}
+a:hover:not(.button, .wp-block-button__link):after {
+  width: 0;
+}
+a:focus {
+  outline: solid dotted;
+  outline-color: var(--color-primary);
+}
+a:active {
+  outline: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+section.main-hero {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 400px;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: var(--color-white);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: var(--margin-side) 2rem;
+}
+section.main-hero .image img {
+  width: 200px;
+}

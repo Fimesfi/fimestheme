@@ -3,15 +3,26 @@ $breakpoint-tablet-landscape: 1024px;
 $breakpoint-mobile: 600px;
 
 $width-full: 100%;
+$width-wide: 1200px;
 
-@media only screen and (max-width: $breakpoint-tablet) {
-    :root {
-        --margin-side: 3rem;
-    }
+:root {
+	--header-horizontal-margin: 5rem;
+	--content-horizontal-margin: 5rem;
+}
+
+
+@media only screen and (max-width: $breakpoint-tablet-landscape) {
+	:root {
+		--header-horizontal-margin: 3rem;
+		--content-horizontal-margin: 5rem;
+	}
+	
 }
 
 @media only screen and (max-width: $breakpoint-mobile) {
-    :root {
-        --margin-side: 1.2rem;
-    }
+	:root {
+		--header-horizontal-margin: 1rem;
+		--content-horizontal-margin: 1rem;
+	}
 }
+

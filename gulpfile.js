@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 const gutil = require('gulp-util');
@@ -23,10 +22,7 @@ gulp.task('sass', function() {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./'))
-    .pipe(rtlcss()) // Convert to RTL
-    .pipe(rename({ basename: 'rtl' })) // Rename to rtl.css
-    .pipe(gulp.dest('./')) // Output RTL stylesheets (rtl.css)
+    .pipe(gulp.dest('./css/'))
     .pipe(browserSync.stream()); // Päivitä selain automaattisesti SCSS-muutosten jälkeen
 });
 
@@ -55,7 +51,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php', './sass/**/*.scss'],
-    proxy: 'http://fimestheme.local/',
+    proxy: 'http://fimesthemev2.local/',
   });
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
   gulp.watch(['./js/*.js', '!./js/app.min.js'], gulp.series('js'));

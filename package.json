@@ -4,7 +4,8 @@
   "description": "Fimestheme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint-sass": "stylelint sass/**/*.scss",
+    "lint-sass:fix": "npm run lint-css -- --fix"
   },
   "repository": {
     "type": "git",
@@ -19,25 +20,24 @@
     "url": "https://github.com/fimesfi/fimestheme/issues"
   },
   "homepage": "https://github.com/fimesfi/fimestheme#readme",
-  "dependencies": {
-    "@wordpress/scripts": "^26.12.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@wordpress/stylelint-config": "^21.25.0",
     "autoprefixer": "^10.4.15",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.66.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-rtlcss": "^1.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "sass": "^1.66.1"
   }
 }
